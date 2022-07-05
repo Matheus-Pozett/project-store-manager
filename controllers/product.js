@@ -23,7 +23,19 @@ const getById = async (req, res, next) => {
   }
 };
 
+const create = async (req, res, next) => {
+  try {
+    const { name } = req.body;
+    const product = await productServices.createProduct(name);
+
+    return res.status(product.status).json(product.result);
+  } catch (e) {
+    next(e);
+  }
+};
+
 module.exports = {
   getAll,
   getById,
+  create,
 };
