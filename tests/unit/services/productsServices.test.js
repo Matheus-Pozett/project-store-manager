@@ -16,7 +16,7 @@ describe("TESTS PRODUCTS SERVICES", () => {
 
     it("Retorna uma lista com todos os produtos", async () => {
       const products = await productServices.getAllProducts();
-      expect(products).to.be.deep.equal(productsMock.getAll);
+      expect(products).to.be.deep.equal(productsMock.sucessResponse);
     });
   });
 
