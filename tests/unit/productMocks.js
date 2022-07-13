@@ -5,25 +5,22 @@ module.exports = {
     {
       id: 1,
       name: "Manopla do Thanos",
-      quantity: 10,
     },
     {
       id: 2,
       name: "Capa do Dr. Estranho",
-      quantity: 1,
     },
     {
       id: 3,
       name: "Joias do infinito",
-      quantity: 99999,
     },
   ],
 
   getId: {
     id: 1,
     name: "Manopla do Thanos",
-    quantity: 10,
   },
+
   insertId: [{ insertId: 1 }],
 
   sucessResponse: {
@@ -32,17 +29,14 @@ module.exports = {
       {
         id: 1,
         name: "Manopla do Thanos",
-        quantity: 10,
       },
       {
         id: 2,
         name: "Capa do Dr. Estranho",
-        quantity: 1,
       },
       {
         id: 3,
         name: "Joias do infinito",
-        quantity: 99999,
       },
     ],
   },
@@ -51,7 +45,6 @@ module.exports = {
     result: {
       id: 1,
       name: "Manopla do Thanos",
-      quantity: 10,
     },
   },
   unsuccessfulResponse: {
@@ -64,7 +57,6 @@ module.exports = {
     result: {
       id: 1,
       name: "Manopla do Thanos",
-      quantity: 10,
     },
   },
 
