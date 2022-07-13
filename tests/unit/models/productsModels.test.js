@@ -88,8 +88,7 @@ describe("TESTS PRODUCTS MODELS", () => {
     it("Será validado que um produto foi atualizado com sucesso", async () => {
       const update = await productsModel.updateProduct(
         exampleMock.id,
-        exampleMock.name,
-        exampleMock.quantity
+        exampleMock.name
       );
       expect(update).to.be.deep.equal(exampleMock);
     });
