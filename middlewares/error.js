@@ -1,4 +1,11 @@
 module.exports = (err, _req, res, _next) => {
-  console.error(err.message);
-  res.status(500).end();
+  const { name, message } = err;
+  switch (name) {
+    case 'NotFoundError':
+      res.status(404).json({ message });
+      break;
+    default:
+      console.warn(err);
+      res.sendStatus(500);
+  }
 };
